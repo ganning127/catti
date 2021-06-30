@@ -1,0 +1,29 @@
+nav a {
+    font-size: 2.5rem !important;
+}
+
+form .row {
+    margin-top: 1rem;
+}
+.separator {
+    height: 3rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.jumbotron { 
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/cat-header.jpg") center;
+
+    background-size: cover;
+    min-height: 20rem !important;
+    color: white;
+    font-weight: bolder;
+}
+
+
+body {
+    background-color: #353A3F;
+    color: white;
+}

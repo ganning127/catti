@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>Catti</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
+        <a class="navbar-brand" href="#">
+          Catti 🐱
+        </a>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid d-flex align-items-center">
+        <div class="container">
+          <h1 class="display-3">Did someone say cats?</h1>
+          <p class="lead">Get free pictures of cats with Catti!</p>
+        </div>
+      </div>
+
+    <section id="inputs">
+        <div class="container">
+            <h3>Generate a cat picture:</h3>
+
+            <form onsubmit="handleSubmission(event)">
+                <div class="row">
+                    <div class="col">
+
+                    <label for="category">Type</label>
+                    <select name="category" id="category" class="form-control">
+                        <option value="">random</option>
+                    </select>
+                    </div>
+
+                    <div class="col">
+                        <label for="text">Text</label>
+                        <input type="text" class="form-control" placeholder="text..." id="text">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="rotate">Rotate</label>
+                        <input type="number" id="rotate" min="0" max="360" class="form-control" placeholder="degrees to rotate...">
+                    </div>
+                    <div class="col">
+                        <label for="flip">Flip</label>
+                        <select name="flip" id="flip" class="form-control">
+                            <option value="">none</option>
+                            <option value="h">horizontal</option>
+                            <option value="v">vertical</option>
+                            <option value="b">Both</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="random">
+                            <label class="form-check-label" for="random">Randomize all catagories</label>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <input type="submit" class="btn btn-success">
+                    </div>
+                </div>
+            </form>
+
+                
+        
+    </div>
+    </section>
+
+    <section>
+        <div class="separator"></div>
+        <div class="output-area">
+            <div class="container text-center">
+
+                <!-- hide spinner once pic loads -->
+                <div class="spinner-border hidden" role="status" id="spinner">
+                    <span class="sr-only">Loading...</span>
+                </div>
+
+                <img src="" alt="" id="image-output" class="img-fluid hidden">
+            </div>
+        </div>
+            
+    
+        </div>
+    </section>
+
+    <div class="separator"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
+
+
