@@ -53,7 +53,7 @@ function getImg(params) {
     
 
     console.log(params)
-    const endpoint = "https://tib0x7tdve.execute-api.us-east-1.amazonaws.com/cat?";
+    const endpoint = "https://nxv5c0kh60.execute-api.us-east-1.amazonaws.com/Prod/?";
 
     const jP = jQuery.param({
         category: params.type,
@@ -67,12 +67,13 @@ function getImg(params) {
     fetch(endpoint + jP, {
         headers: {
             "Content-Type": 'text/plain'
-        }
+        },
        
     })
         .then(resp => resp.json())
         .then(data => {
-            setImg(data.body)
+            console.log(data)
+            setImg(data.base64Str)
         })
 
 }
