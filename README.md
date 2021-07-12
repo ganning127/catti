@@ -1,5 +1,4 @@
 # Catti 🐱
----
 Catti is the purrfect API for getting cute and funny pictures of cats!
 
 ## ⚡ Features
@@ -7,8 +6,7 @@ Catti is the purrfect API for getting cute and funny pictures of cats!
 - Add text to cat pictures
 - Rotate and flip cat pictures
 
-## 💻 Technologies:
+## 💻 Technologies
 - AWS Lambda
 - NodeJS
-- HTML, CSS, JS
-
+- HTML, CSS, Bootstrap, JS
