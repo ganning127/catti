@@ -53,7 +53,7 @@ function getImg(params) {
     
 
     console.log(params)
-    const endpoint = "https://yfpc1dcdda.execute-api.us-east-1.amazonaws.com/Prod/?";
+    const endpoint = "https://aopg1gf91g.execute-api.us-east-1.amazonaws.com/Prod/?";
 
     const jP = jQuery.param({
         category: params.type,
