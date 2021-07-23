@@ -86,3 +86,5 @@ function setImg(bs4) {
     spinner.classList.add('hidden');
 
 }
+
+// end of code
